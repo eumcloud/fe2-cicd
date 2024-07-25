@@ -148,16 +148,6 @@ AWS CLI 자격 증명을 설정하기 위해 aws-actions/configure-aws-credentia
 ```
 --delete 옵션은 소스 디렉토리와 S3 버킷 내용을 비교하여 소스에는 없는 파일을 S3에서 삭제합니다.
 
-### Next.js 설정 파일 
-next.config.mjs에 다음과 같이 설정해야 빌드된 파일이 out/ 폴더에 생성됩니다.
-```javascript 
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  output: "export"
-};
-
-export default nextConfig;
-```
 ### Invalidate CloudFront cache
 CloudFront의 캐시를 무효화합니다.
 
@@ -168,3 +158,17 @@ CloudFront의 캐시를 무효화합니다.
 ```
 aws cloudfront create-invalidation 명령어를 사용하여 지정된 CloudFront 배포의 모든 경로("/*")에 대한 캐시를 무효화합니다. 이는 최신 콘텐츠가 사용자에게 즉시 반영되도록 하기 위해 필요합니다.
 
+
+
+
+### 기타사항
+#### Next.js 설정 파일 
+next.config.mjs에 다음과 같이 설정해야 빌드된 파일이 out/ 폴더에 생성됩니다.
+```javascript 
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: "export"
+};
+
+export default nextConfig;
+```
