@@ -160,7 +160,7 @@ aws cloudfront create-invalidation 명령어를 사용하여 지정된 CloudFron
 
 
 
-
+--
 ### 기타사항
 #### Next.js 설정 파일 
 next.config.mjs에 다음과 같이 설정해야 빌드된 파일이 out/ 폴더에 생성됩니다.
