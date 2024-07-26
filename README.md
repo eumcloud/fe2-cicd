@@ -160,6 +160,7 @@ aws cloudfront create-invalidation 명령어를 사용하여 지정된 CloudFron
 
 
 
+
 --
 ### 기타사항
 #### Next.js 설정 파일 
