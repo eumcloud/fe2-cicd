@@ -159,7 +159,6 @@ CloudFront의 캐시를 무효화합니다.
 aws cloudfront create-invalidation 명령어를 사용하여 지정된 CloudFront 배포의 모든 경로("/*")에 대한 캐시를 무효화합니다. 이는 최신 콘텐츠가 사용자에게 즉시 반영되도록 하기 위해 필요합니다.
 
 
-
 --
 ### 기타사항
 #### Next.js 설정 파일 
